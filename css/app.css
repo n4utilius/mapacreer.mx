@@ -1,0 +1,298 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body{
+  padding: 0;
+  margin:0;
+}
+
+nav{
+  position: fixed;
+  width:100%;
+  z-index: 30;
+  max-height: 200px;
+}
+
+nav .row, nav .nav-bar{
+  width:100%;
+}
+
+nav .nav-bar ul{
+  margin 4px;
+}
+
+li{
+  list-style-type:none;
+}
+
+#map_canvas {
+  background: url("../img/mapaWEB.png");
+  background-size: 100% auto;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header_nav li#home{
+  height: 0;
+}
+.header_nav li#home img{
+  width: 350px;
+  padding: 30px;
+  background: url("../img/topBg.jpg") center center;
+  border-right: 5px solid rgba(0,0,0,0.4);
+  border-bottom: 5px solid rgba(0,0,0,0.4);
+  position: absolute;
+  left: 0;
+}
+
+
+
+iframe{
+  	border:0;
+  	height:375px;
+  	width:100%;
+}
+
+.header_nav {
+  background: #F18D56;
+  border-bottom: 5px solid rgba(0,0,0,0.4);
+  box-shadow: none;
+  font-weight: bold;
+  padding: 0px 35px 10px 0px;
+}
+
+.nav-bar li.right{
+  padding-top: 3px;
+}
+
+.nav-bar > li > a:first-child {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 45px;
+  text-decoration: none;
+}
+
+.header_nav .right{
+  float:right;
+  padding: 0px;
+}
+.header_nav .right a{
+  color:#fff;
+}
+
+.section_light{
+	border:none;
+	margin-bottom: 20px;
+}
+
+.section_dark{
+	border:none;
+	padding: 20px 0px 70px 0px;
+}
+
+h2.welcome_text{
+  color:#fff;
+  text-shadow: 1px 1px 1px #000;
+  /*background-color: rgba(255,255,255, 0.8);*/
+}
+
+
+/* -----------------------------------------
+   Page Home
+----------------------------------------- */
+.separator{
+	min-width: 100%;
+	min-height: 150px;
+	margin-bottom: 50px;
+}
+
+#home-header{
+	background: url("../img/atardecer_medium.jpg") fixed center center no-repeat;
+}
+
+@media (min-width: 520px) {
+  #home-header{
+    background-size: 100% auto;
+  }
+
+  #separator1{
+    background: url("../img/paneles_medium.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  #separator2{
+	 background: url("../img/ciudad_medium.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  #separator3{
+    background: url("../img/espacio_medium.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  #nosotros div.miembro img{
+  	width: 200px;
+  	height: 200px;
+  	padding: 5px;
+  }
+
+  #nosotros div img#m1{
+	  background: url("../img/miembro.png") center center no-repeat;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+  }
+
+  #nosotros div img#m2{
+	  background: url("../img/miembro.png") center center no-repeat;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+  }
+
+  #nosotros div img#m3{
+	  background: url("../img/miembro.png") center center no-repeat;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+  }
+
+  #nosotros div img#m4{
+	  background: url("../img/miembro.png") center center no-repeat;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 800px){
+	.header_nav {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 800px) and  (min-width: 520px){
+  #home-header{
+    background-size: 100% auto;
+  }
+
+
+  h1.heading_supersize{
+    font-size: 6em;
+    line-height: 90px;
+  } 
+
+  h2.welcome_text{
+    font-size: 2.5em;
+
+  }
+
+
+  .nav-bar > li{
+  	float:left;
+  	width:25%;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-bar > li{
+  	float:left;
+  	width:50%;
+  }
+
+  h1.heading_supersize{
+  	font-size: 5em;
+  	line-height: 70px;
+  } 
+
+  h2.welcome_text{
+  	font-size: 1.5em;
+  }
+
+  #separator1{
+    background: url("../img/paneles.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  #separator2{
+    background: url("../img/ciudad.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+
+  #separator3{
+    background: url("../img/espacio.jpg") fixed center top no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+#home-header{
+	min-height: 250px;
+}
+
+.section_dark h1{
+	color:#fff;
+	text-align: center;
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-weight: normal;
+	margin: 20px 0px 35px 0px;
+}
+
+.section_light{
+	padding:0px 0px 100px 0px;
+}
+
+li#subscribir{
+	float:right;
+}
+
+li#subscribir:hover{
+	cursor:pointer;
+}
+
+li#subscribir a:hover{
+	cursor:pointer;
+}
+
+footer{
+  color:#fff;
+  /*background: url("../img/bgSection6.png") repeat;*/
+  background: #37B8CB;
+  position: fixed;
+  max-height: 200px;
+  bottom: 0;
+  right: 0;
+  border-top: 5px solid rgba(0,0,0,0.4);
+  border-left: 5px solid rgba(0,0,0,0.4);
+
+}
+
+footer h3{
+  color:#fff;
+  margin: 6px 0;
+}
+
+.footer{
+  padding: 0px 20px 0px 0px;
+  text-align: right;
+}
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
